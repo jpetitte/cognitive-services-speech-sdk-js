@@ -4,7 +4,7 @@ module.exports = {
     transform: {
         "^.+\\.ts$": "ts-jest",
     },
-    testRegex: "tests/.*Tests\\.ts$",
+    testRegex: "tests/Translation.*Tests\\.ts$",
     testPathIgnorePatterns: ["/lib/", "/node_modules/", "/src/"],
     moduleFileExtensions: ["ts", "js", "jsx", "json", "node"],
     collectCoverage: true,

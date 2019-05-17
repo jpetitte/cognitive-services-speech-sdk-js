@@ -1124,7 +1124,7 @@ describe.each([true, false])("Service based tests", (forceNodeWebSocket: boolean
             });
     });
 
-    test("Connection Errors Propogate Async", (done: jest.DoneCallback) => {
+    test.only("Connection Errors Propogate Async", (done: jest.DoneCallback) => {
         // tslint:disable-next-line:no-console
         console.info("Name: Connection Errors Propogate Async");
         const s: sdk.SpeechTranslationConfig = sdk.SpeechTranslationConfig.fromSubscription("badKey", Settings.SpeechRegion);
